@@ -45,11 +45,11 @@ $$A+ \rightarrow (A- \text{ and } B+) \rightarrow \text{Delay} \rightarrow C+ \r
 ### **Pneumatic Step Diagram**
 <!-- Place image at: assets/images/step_diagram.png -->
 ### **Pneumatic Step Diagram**
-<img width="855" height="566" alt="ccs" src="https://github.com/user-attachments/assets/3dbb739a-d578-471a-8d9f-bf716790d95c" />
+
 
 ### **FluidSim Electro-Pneumatic Circuit Diagram**
 <!-- Place image at: assets/images/fluidsim_circuit.png -->
-![FluidSim Circuit Diagram](assets/images/fluidsim_circuit.png)
+<img width="855" height="566" alt="ccs" src="https://github.com/user-attachments/assets/3dbb739a-d578-471a-8d9f-bf716790d95c" />
 
 ---
 
