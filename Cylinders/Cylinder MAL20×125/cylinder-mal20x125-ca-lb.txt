@@ -1,0 +1,10 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"50-02062015-102365";"";
+"REFERENCE";"MAL20x125-CA-LB";"";
+"TraceParts.PartTitle";"Aluminum mini cylinder MAL series";"";
+"TraceParts.InstanceId";"50-02062015-10236561O7YZMQO7119Y0F32NYJRGV3";"";
+"SUPPLIER";"ZheJiang XingChen pneumatic Co., LTD";"";
+"DESIGN";"Aluminum mini cylinder MAL series MAL20x125-CA-LB";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.PartVersion";"1.2.0";"";
