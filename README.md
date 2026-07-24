@@ -1,52 +1,39 @@
 # Automated Electro-Pneumatic Luggage Lifter
-  
 
 
-* **Mostafa Mohamed Abdelaziz** 
-
----
 
 ## 📌 Project Overview
-The **Luggage Lifter** is a pneumatic-powered automated system designed to transfer luggage from a lower receiving platform to an upper storage level in a continuous sequence. Built with a stable frame structure and driven by three pneumatic cylinders, the system is designed to reduce manual handling effort in transport operations such as airports or storage facilities.
+The **Luggage Lifter** is a pneumatic-powered automated system designed to transfer luggage from a lower receiving platform to an upper storage level in a continuous sequence[cite: 1]. Built with a stable frame structure and driven by three pneumatic cylinders, the system is designed to reduce manual handling effort in transport operations such as airports or storage facilities[cite: 1].
 
 ---
 
 ## ⚙️ System Architecture & Working Principle
 
 ### **Mechanism Description**
-1. **Frame Structure:** Ground-mounted frame supporting all mechanical and pneumatic components.
-2. **Receiving Platform (Level 2):** Initial placement zone for luggage.
-3. **Cylinder 1 (Horizontal Transfer):** Pushes luggage from the receiving platform onto the lifting platform.
-4. **Cylinder 2 (Vertical Lift):** Elevates the platform from Level 2 to Level 3.
-5. **Cylinder 3 (Horizontal Push):** Pushes luggage from the elevated platform onto a slider, where it returns via gravity/pass-through to complete the cycle.
+1. **Frame Structure:** Ground-mounted frame supporting all mechanical and pneumatic components[cite: 1].
+2. **Receiving Platform (Level 2):** Initial placement zone for luggage[cite: 1].
+3. **Cylinder 1 (Horizontal Transfer):** Pushes luggage from the receiving platform onto the lifting platform[cite: 1].
+4. **Cylinder 2 (Vertical Lift):** Elevates the platform from Level 2 to Level 3[cite: 1].
+5. **Cylinder 3 (Horizontal Push):** Pushes luggage from the elevated platform onto a slider, where it returns via gravity/pass-through to complete the cycle[cite: 1].
 
 ### **Pneumatic Actuators Summary**
-* **Cylinder A / Cylinder 1:** MAL20×125 (Horizontal Transfer)
-* **Cylinder B / Cylinder 2:** MAL20×100 (Vertical Lifting)
-* **Cylinder C / Cylinder 3:** MAL20×125 (Horizontal Exit Push)
+* **Cylinder A / Cylinder 1:** MAL20×125 (Horizontal Transfer)[cite: 1]
+* **Cylinder B / Cylinder 2:** MAL20×100 (Vertical Lifting)[cite: 1]
+* **Cylinder C / Cylinder 3:** MAL20×125 (Horizontal Exit Push)[cite: 1]
 
 ---
 
-## 📐 SolidWorks Design & CAD Drawings
+## 📐 SolidWorks Design Pictures
 
 ### **3D Assembly Schematic**
 <!-- Place image at: assets/images/solidworks_3d_assembly.png -->
 ![3D SolidWorks Assembly](assets/images/solidworks_3d_assembly.png)
 
-### **Key Mechanical Components & 2D Projections**
+### **SolidWorks Design Model Views**
 
-| Component | Quantity | Function Description |
-| :--- | :---: | :--- |
-| **Ground Seat** | 4 | Main ground supports holding the structure |
-| **Main Legs / Arms** | 4 / 8 | Structural aluminum/wood frame profile |
-| **MAL20×100 Cylinder** | 1 | Vertical lifting cylinder (Level 1) |
-| **MAL20×125 Cylinders** | 2 | Horizontal transfer and push cylinders |
-| **Lifting Platform** | 1 | Holds the object during vertical travel |
-| **Support Plate w/ Hole** | 1 | Level 3 pass-through plate for item return |
-
-#### **CAD Views**
-<!-- Place image at: assets/images/cad_2d_drawings.png -->
-![2D Drawings](assets/images/cad_2d_drawings.png)
+| Isometric View | Front View | Top View |
+| :---: | :---: | :---: |
+| <!-- Place image at: assets/images/solidworks_iso.png --> ![SolidWorks Isometric](assets/images/solidworks_iso.png) | <!-- Place image at: assets/images/solidworks_front.png --> ![SolidWorks Front](assets/images/solidworks_front.png) | <!-- Place image at: assets/images/solidworks_top.png --> ![SolidWorks Top](assets/images/solidworks_top.png) |
 
 ---
 
@@ -57,7 +44,7 @@ $$A+ \rightarrow (A- \text{ and } B+) \rightarrow \text{Delay} \rightarrow C+ \r
 
 ### **Pneumatic Step Diagram**
 <!-- Place image at: assets/images/step_diagram.png -->
-![Pneumatic Step Diagram](assets/images/step_diagram.png)
+![Pneumatic Step Diagram](<img width="855" height="566" alt="ccs" src="https://github.com/user-attachments/assets/3dbb739a-d578-471a-8d9f-bf716790d95c" />)
 
 ### **FluidSim Electro-Pneumatic Circuit Diagram**
 <!-- Place image at: assets/images/fluidsim_circuit.png -->
@@ -145,8 +132,7 @@ IF K0_MasterRelay THEN
         
         // Reset Timer
         Step_Timer(IN := FALSE);
-
-
     END_IF;
 
+END_IF;
 END_IF;
