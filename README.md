@@ -1,1 +1,152 @@
-# Automated-Luggage-Lifter
+# Automated Electro-Pneumatic Luggage Lifter
+  
+
+
+* **Mostafa Mohamed Abdelaziz** 
+
+---
+
+## 📌 Project Overview
+The **Luggage Lifter** is a pneumatic-powered automated system designed to transfer luggage from a lower receiving platform to an upper storage level in a continuous sequence. Built with a stable frame structure and driven by three pneumatic cylinders, the system is designed to reduce manual handling effort in transport operations such as airports or storage facilities.
+
+---
+
+## ⚙️ System Architecture & Working Principle
+
+### **Mechanism Description**
+1. **Frame Structure:** Ground-mounted frame supporting all mechanical and pneumatic components.
+2. **Receiving Platform (Level 2):** Initial placement zone for luggage.
+3. **Cylinder 1 (Horizontal Transfer):** Pushes luggage from the receiving platform onto the lifting platform.
+4. **Cylinder 2 (Vertical Lift):** Elevates the platform from Level 2 to Level 3.
+5. **Cylinder 3 (Horizontal Push):** Pushes luggage from the elevated platform onto a slider, where it returns via gravity/pass-through to complete the cycle.
+
+### **Pneumatic Actuators Summary**
+* **Cylinder A / Cylinder 1:** MAL20×125 (Horizontal Transfer)
+* **Cylinder B / Cylinder 2:** MAL20×100 (Vertical Lifting)
+* **Cylinder C / Cylinder 3:** MAL20×125 (Horizontal Exit Push)
+
+---
+
+## 📐 SolidWorks Design & CAD Drawings
+
+### **3D Assembly Schematic**
+<!-- Place image at: assets/images/solidworks_3d_assembly.png -->
+![3D SolidWorks Assembly](assets/images/solidworks_3d_assembly.png)
+
+### **Key Mechanical Components & 2D Projections**
+
+| Component | Quantity | Function Description |
+| :--- | :---: | :--- |
+| **Ground Seat** | 4 | Main ground supports holding the structure |
+| **Main Legs / Arms** | 4 / 8 | Structural aluminum/wood frame profile |
+| **MAL20×100 Cylinder** | 1 | Vertical lifting cylinder (Level 1) |
+| **MAL20×125 Cylinders** | 2 | Horizontal transfer and push cylinders |
+| **Lifting Platform** | 1 | Holds the object during vertical travel |
+| **Support Plate w/ Hole** | 1 | Level 3 pass-through plate for item return |
+
+#### **CAD Views**
+<!-- Place image at: assets/images/cad_2d_drawings.png -->
+![2D Drawings](assets/images/cad_2d_drawings.png)
+
+---
+
+## ⚡ Electro-Pneumatic Circuit & Control Logic
+
+### **Sequence Execution**
+$$A+ \rightarrow (A- \text{ and } B+) \rightarrow \text{Delay} \rightarrow C+ \rightarrow (C- \text{ and } B-)$$
+
+### **Pneumatic Step Diagram**
+<!-- Place image at: assets/images/step_diagram.png -->
+![Pneumatic Step Diagram](assets/images/step_diagram.png)
+
+### **FluidSim Electro-Pneumatic Circuit Diagram**
+<!-- Place image at: assets/images/fluidsim_circuit.png -->
+![FluidSim Circuit Diagram](assets/images/fluidsim_circuit.png)
+
+---
+
+## 💻 Control Implementation Code
+
+Below is the structured PLC/Control Logic pseudocode representing the Relay Ladder Logic implemented for the electro-pneumatic sequence:
+
+```pascal
+// ========================================================
+// Electro-Pneumatic Sequence Control Logic
+// Sequence: A+ -> (A- AND B+) -> Delay -> C+ -> (C- AND B-)
+// Actuators: SOL_1 (Cylinder A), SOL_2 (Cylinder B), SOL_3 (Cylinder C)
+// Sensors: S1 (Proximity), R1 (Reed Switch 1), R2 (Reed Switch 2), R3 (Reed Switch 3)
+// ========================================================
+
+PROGRAM Luggage_Lifter_Control
+VAR
+    Start_PB      : BOOL; (* Start Push Button *)
+    Stop_PB       : BOOL; (* Stop Push Button *)
+    S1_Proximity  : BOOL; (* Object present on receiving platform *)
+    R1_Reed       : BOOL; (* Cylinder A Extended Limit *)
+    R2_Reed       : BOOL; (* Cylinder B Extended Limit *)
+    R3_Reed       : BOOL; (* Cylinder C Extended Limit *)
+
+    K0_MasterRelay: BOOL;
+    C1_Relay      : BOOL;
+    C2_Relay      : BOOL;
+    C3_Relay      : BOOL;
+
+    SOL_1_Extend  : BOOL;
+    SOL_1_Retract : BOOL;
+    SOL_2_Extend  : BOOL;
+    SOL_2_Retract : BOOL;
+    SOL_3_Extend  : BOOL;
+    SOL_3_Retract : BOOL;
+
+    Step_Timer    : TON;  (* On-Delay Timer *)
+END_VAR
+
+// Master Control Relay (Latch / Unlatch)
+K0_MasterRelay := (Start_PB OR K0_MasterRelay) AND NOT Stop_PB;
+
+IF K0_MasterRelay THEN
+
+    // Step 1: Cylinder A Extension (Push to lifter)
+    IF S1_Proximity AND NOT C1_Relay THEN
+        SOL_1_Extend := TRUE;
+        SOL_1_Retract := FALSE;
+    END_IF;
+
+    // Step 2: Cylinder A Retracts AND Cylinder B Extends (Vertical Lift)
+    IF R1_Reed THEN
+        C1_Relay := TRUE;
+        SOL_1_Extend := FALSE;
+        SOL_1_Retract := TRUE;
+        
+        SOL_2_Extend := TRUE;
+        SOL_2_Retract := FALSE;
+    END_IF;
+
+    // Step 3: Delay at top level before Cylinder C triggers
+    IF R2_Reed THEN
+        C2_Relay := TRUE;
+        Step_Timer(IN := TRUE, PT := T#2S); // 2 Second Delay
+    END_IF;
+
+    // Step 4: Cylinder C Extension (Push to slider)
+    IF Step_Timer.Q THEN
+        SOL_3_Extend := TRUE;
+        SOL_3_Retract := FALSE;
+    END_IF;
+
+    // Step 5: Cylinder C Retracts AND Cylinder B Retracts (System Reset)
+    IF R3_Reed THEN
+        C3_Relay := TRUE;
+        SOL_3_Extend := FALSE;
+        SOL_3_Retract := TRUE;
+        
+        SOL_2_Extend := FALSE;
+        SOL_2_Retract := TRUE;
+        
+        // Reset Timer
+        Step_Timer(IN := FALSE);
+
+
+    END_IF;
+
+END_IF;
