@@ -2,7 +2,11 @@
 
 
 ## 📌 Project Overview
-The **Luggage Lifter** is a pneumatic-powered automated system designed to transfer luggage from a lower receiving platform to an upper storage level in a continuous sequence. Built with a stable frame structure and driven by three pneumatic cylinders, the system is designed to reduce manual handling effort in transport operations such as airports or storage facilities.
+The **Luggage Lifter** is a pneumatic-powered automated system designed to transfer luggage from a lower receiving platform to an upper storage level in a continuous sequence. Built with a stable frame structure and driven by three pneumatic <img width="855" height="566" alt="ccs" src="https://github.com/user-attachments/assets/2c89707b-d7f1-4690-80eb-6794c9aac286" />
+<img width="764" height="595" alt="aa" src="https://github.com/user-attachments/assets/ed380085-db9b-485e-92b7-166ba7575383" />
+<img width="838" height="397" alt="aaaaa" src="https://github.com/user-attachments/assets/9fe16894-d064-4242-86ce-0389c79639b1" />
+<img width="1280" height="720" alt="1" src="https://github.com/user-attachments/assets/905c7ab8-af36-46bc-b958-a2146ed53236" />
+cylinders, the system is designed to reduce manual handling effort in transport operations such as airports or storage facilities.
 
 ---
 
