@@ -1,6 +1,3 @@
-<img width="855" height="566" alt="ccs" src="https://github.com/user-attachments/assets/97ce43d7-9486-44d0-903b-9b3fc8ed42f2" />
-<img width="764" height="5<img width="612" height="612" alt="istockphoto-2211393565-612x612" src="https://github.com/user-attachments/assets/1f1571f3-fe29-4016-befd-26c5f97d0b06" />
-<img width="838" height="397" alt="aaaaa" src="https://github.com/user-attachments/assets/380fd25d-22e1-4112-a2db-ce89828953c9" />
 
 # Automated Electro-Pneumatic Luggage Lifter
 
@@ -34,7 +31,7 @@ The **Luggage Lifter** is a pneumatic-powered automated system designed to trans
 
 ### **3D Assembly Schematic**
 <!-- Place image at: assets/images/solidworks_3d_assembly.png -->
-![3D SolidWorks Assembly](assets/images/solidworks_3d_assembly.png)
+![3D SolidWorks Assembly](<img width="764" height="5<img width="612" height="612" alt="istockphoto-2211393565-612x612" src="https://github.com/user-attachments/assets/1f1571f3-fe29-4016-befd-26c5f97d0b06" />)
 
 ### **SolidWorks Design Model Views**
 
