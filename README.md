@@ -1,3 +1,4 @@
+
 # Automated Electro-Pneumatic Luggage Lifter
 
 
@@ -43,8 +44,7 @@ The **Luggage Lifter** is a pneumatic-powered automated system designed to trans
 $$A+ \rightarrow (A- \text{ and } B+) \rightarrow \text{Delay} \rightarrow C+ \rightarrow (C- \text{ and } B-)$$
 
 ### **Pneumatic Step Diagram**
-<!-- Place image at: assets/images/step_diagram.png -->
-### **Pneumatic Step Diagram**
+<img width="764" height="595" alt="aa" src="https://github.com/user-attachments/assets/a0ba3663-3886-4b67-bdee-bf8242cda34b" />
 
 
 ### **FluidSim Electro-Pneumatic Circuit Diagram**
