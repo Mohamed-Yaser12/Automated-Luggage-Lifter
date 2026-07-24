@@ -39,11 +39,6 @@ The **Luggage Lifter** is a pneumatic-powered automated system designed to trans
 | **View 3** | **View 4** |
 | <img src="https://github.com/user-attachments/assets/42adb996-b688-4c66-b03b-4e0b238b3cad" width="100%" alt="SolidWorks View 3" /> | <img src="https://github.com/user-attachments/assets/34b471c6-be29-4a26-af88-0c6843c9f7ab" width="100%" alt="SolidWorks View 4" /> |
 
-### **SolidWorks Design Model Views**
-
-| Isometric View | Front View | Top View |
-| :---: | :---: | :---: |
-| <img src="assets/images/solidworks_iso.png" width="100%" alt="SolidWorks Isometric" /> | <img src="assets/images/solidworks_front.png" width="100%" alt="SolidWorks Front" /> | <img src="assets/images/solidworks_top.png" width="100%" alt="SolidWorks Top" /> |
 
 ---
 
