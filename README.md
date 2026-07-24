@@ -1,10 +1,11 @@
 
+
+<img width="925" height="600" alt="Screenshot 2025-10-23 002943" src="https://github.com/user-attachments/assets/a73a86fb-a082-4046-84b1-974451c764c6" />
+
+
+
 # Automated Electro-Pneumatic Luggage Lifter
 
-[Client Govt Official Declaration S026.pdf](https://github.com/user-attachments/files/30359054/Client.Govt.Official.Declaration.S026.pdf)
-
-
-[SLB Relative Declaration Form.pdf](https://github.com/user-attachments/files/30359057/SLB.Relative.Declaration.Form.pdf)
 
 ## 📌 Project Overview
 The **Luggage Lifter** is a pneumatic-powered automated system designed to transfer luggage from a lower receiving platform to an upper storage level in a continuous sequence[cite: 1]. Built with a stable frame structure and driven by three pneumatic cylinders, the system is designed to reduce manual handling effort in transport operations such as airports or storage facilities[cite: 1].
