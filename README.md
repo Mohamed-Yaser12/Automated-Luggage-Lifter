@@ -25,16 +25,21 @@ The **Luggage Lifter** is a pneumatic-powered automated system designed to trans
 ## 📐 SolidWorks Design Pictures
 
 ### **3D Assembly Schematic**
-<img width="740" height="649" alt="Screenshot 2025-10-23 003105" src="https://github.com/user-attachments/assets/5ca76464-0ef8-4fb8-b6d2-1fbf1d3b42a9" />
-<img width="713" height="619" alt="Screenshot 2025-10-23 003036" src="https://github.com/user-attachments/assets/e88f5884-7660-438b-998a-006050e22186" />
-<img width="877" height="637" alt="Screenshot 2025-10-23 003020" src="https://github.com/user-attachments/assets/42adb996-b688-4c66-b03b-4e0b238b3cad" />
-<img width="925" height="600" alt="Screenshot 2025-10-23 002943" src="https://github.com/user-attachments/assets/34b471c6-be29-4a26-af88-0c6843c9f7ab" />
+
+<p align="center">
+  <img width="400" height="300" style="object-fit: contain;" alt="SolidWorks View 1" src="https://github.com/user-attachments/assets/5ca76464-0ef8-4fb8-b6d2-1fbf1d3b42a9" />
+  <img width="400" height="300" style="object-fit: contain;" alt="SolidWorks View 2" src="https://github.com/user-attachments/assets/e88f5884-7660-438b-998a-006050e22186" />
+</p>
+<p align="center">
+  <img width="400" height="300" style="object-fit: contain;" alt="SolidWorks View 3" src="https://github.com/user-attachments/assets/42adb996-b688-4c66-b03b-4e0b238b3cad" />
+  <img width="400" height="300" style="object-fit: contain;" alt="SolidWorks View 4" src="https://github.com/user-attachments/assets/34b471c6-be29-4a26-af88-0c6843c9f7ab" />
+</p>
 
 ### **SolidWorks Design Model Views**
 
 | Isometric View | Front View | Top View |
 | :---: | :---: | :---: |
-| <!-- Place image at: assets/images/solidworks_iso.png --> ![SolidWorks Isometric](assets/images/solidworks_iso.png) | <!-- Place image at: assets/images/solidworks_front.png --> ![SolidWorks Front](assets/images/solidworks_front.png) | <!-- Place image at: assets/images/solidworks_top.png --> ![SolidWorks Top](assets/images/solidworks_top.png) |
+| <img width="250" height="200" style="object-fit: contain;" alt="SolidWorks Isometric" src="assets/images/solidworks_iso.png" /> | <img width="250" height="200" style="object-fit: contain;" alt="SolidWorks Front" src="assets/images/solidworks_front.png" /> | <img width="250" height="200" style="object-fit: contain;" alt="SolidWorks Top" src="assets/images/solidworks_top.png" /> |
 
 ---
 
@@ -44,12 +49,14 @@ The **Luggage Lifter** is a pneumatic-powered automated system designed to trans
 $$A+ \rightarrow (A- \text{ and } B+) \rightarrow \text{Delay} \rightarrow C+ \rightarrow (C- \text{ and } B-)$$
 
 ### **Pneumatic Step Diagram**
-<img width="764" height="595" alt="aa" src="https://github.com/user-attachments/assets/a0ba3663-3886-4b67-bdee-bf8242cda34b" />
-
+<p align="center">
+  <img width="700" height="450" style="object-fit: contain;" alt="Pneumatic Step Diagram" src="https://github.com/user-attachments/assets/a0ba3663-3886-4b67-bdee-bf8242cda34b" />
+</p>
 
 ### **FluidSim Electro-Pneumatic Circuit Diagram**
-<!-- Place image at: assets/images/fluidsim_circuit.png -->
-<img width="855" height="566" alt="ccs" src="https://github.com/user-attachments/assets/3dbb739a-d578-471a-8d9f-bf716790d95c" />
+<p align="center">
+  <img width="700" height="450" style="object-fit: contain;" alt="FluidSim Circuit Diagram" src="https://github.com/user-attachments/assets/3dbb739a-d578-471a-8d9f-bf716790d95c" />
+</p>
 
 ---
 
