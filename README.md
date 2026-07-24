@@ -2,23 +2,23 @@
 
 
 ## 📌 Project Overview
-The **Luggage Lifter** is a pneumatic-powered automated system designed to transfer luggage from a lower receiving platform to an upper storage level in a continuous sequence[cite: 1]. Built with a stable frame structure and driven by three pneumatic cylinders, the system is designed to reduce manual handling effort in transport operations such as airports or storage facilities[cite: 1].
+The **Luggage Lifter** is a pneumatic-powered automated system designed to transfer luggage from a lower receiving platform to an upper storage level in a continuous sequence. Built with a stable frame structure and driven by three pneumatic cylinders, the system is designed to reduce manual handling effort in transport operations such as airports or storage facilities.
 
 ---
 
 ## ⚙️ System Architecture & Working Principle
 
 ### **Mechanism Description**
-1. **Frame Structure:** Ground-mounted frame supporting all mechanical and pneumatic components[cite: 1].
-2. **Receiving Platform (Level 2):** Initial placement zone for luggage[cite: 1].
-3. **Cylinder 1 (Horizontal Transfer):** Pushes luggage from the receiving platform onto the lifting platform[cite: 1].
-4. **Cylinder 2 (Vertical Lift):** Elevates the platform from Level 2 to Level 3[cite: 1].
-5. **Cylinder 3 (Horizontal Push):** Pushes luggage from the elevated platform onto a slider, where it returns via gravity/pass-through to complete the cycle[cite: 1].
+1. **Frame Structure:** Ground-mounted frame supporting all mechanical and pneumatic components.
+2. **Receiving Platform (Level 2):** Initial placement zone for luggage.
+3. **Cylinder 1 (Horizontal Transfer):** Pushes luggage from the receiving platform onto the lifting platform.
+4. **Cylinder 2 (Vertical Lift):** Elevates the platform from Level 2 to Level 3.
+5. **Cylinder 3 (Horizontal Push):** Pushes luggage from the elevated platform onto a slider, where it returns via gravity/pass-through to complete the cycle.
 
 ### **Pneumatic Actuators Summary**
-* **Cylinder A / Cylinder 1:** MAL20×125 (Horizontal Transfer)[cite: 1]
-* **Cylinder B / Cylinder 2:** MAL20×100 (Vertical Lifting)[cite: 1]
-* **Cylinder C / Cylinder 3:** MAL20×125 (Horizontal Exit Push)[cite: 1]
+* **Cylinder A / Cylinder 1:** MAL20×125 (Horizontal Transfer)
+* **Cylinder B / Cylinder 2:** MAL20×100 (Vertical Lifting)
+* **Cylinder C / Cylinder 3:** MAL20×125 (Horizontal Exit Push)
 
 ---
 
