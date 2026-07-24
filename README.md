@@ -26,20 +26,17 @@ The **Luggage Lifter** is a pneumatic-powered automated system designed to trans
 
 ### **3D Assembly Schematic**
 
-<p align="center">
-  <img width="400" height="300" style="object-fit: contain;" alt="SolidWorks View 1" src="https://github.com/user-attachments/assets/5ca76464-0ef8-4fb8-b6d2-1fbf1d3b42a9" />
-  <img width="400" height="300" style="object-fit: contain;" alt="SolidWorks View 2" src="https://github.com/user-attachments/assets/e88f5884-7660-438b-998a-006050e22186" />
-</p>
-<p align="center">
-  <img width="400" height="300" style="object-fit: contain;" alt="SolidWorks View 3" src="https://github.com/user-attachments/assets/42adb996-b688-4c66-b03b-4e0b238b3cad" />
-  <img width="400" height="300" style="object-fit: contain;" alt="SolidWorks View 4" src="https://github.com/user-attachments/assets/34b471c6-be29-4a26-af88-0c6843c9f7ab" />
-</p>
+| View 1 | View 2 |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/5ca76464-0ef8-4fb8-b6d2-1fbf1d3b42a9" width="100%" alt="SolidWorks View 1" /> | <img src="https://github.com/user-attachments/assets/e88f5884-7660-438b-998a-006050e22186" width="100%" alt="SolidWorks View 2" /> |
+| **View 3** | **View 4** |
+| <img src="https://github.com/user-attachments/assets/42adb996-b688-4c66-b03b-4e0b238b3cad" width="100%" alt="SolidWorks View 3" /> | <img src="https://github.com/user-attachments/assets/34b471c6-be29-4a26-af88-0c6843c9f7ab" width="100%" alt="SolidWorks View 4" /> |
 
 ### **SolidWorks Design Model Views**
 
 | Isometric View | Front View | Top View |
 | :---: | :---: | :---: |
-| <img width="250" height="200" style="object-fit: contain;" alt="SolidWorks Isometric" src="assets/images/solidworks_iso.png" /> | <img width="250" height="200" style="object-fit: contain;" alt="SolidWorks Front" src="assets/images/solidworks_front.png" /> | <img width="250" height="200" style="object-fit: contain;" alt="SolidWorks Top" src="assets/images/solidworks_top.png" /> |
+| <img src="assets/images/solidworks_iso.png" width="100%" alt="SolidWorks Isometric" /> | <img src="assets/images/solidworks_front.png" width="100%" alt="SolidWorks Front" /> | <img src="assets/images/solidworks_top.png" width="100%" alt="SolidWorks Top" /> |
 
 ---
 
@@ -50,12 +47,12 @@ $$A+ \rightarrow (A- \text{ and } B+) \rightarrow \text{Delay} \rightarrow C+ \r
 
 ### **Pneumatic Step Diagram**
 <p align="center">
-  <img width="700" height="450" style="object-fit: contain;" alt="Pneumatic Step Diagram" src="https://github.com/user-attachments/assets/a0ba3663-3886-4b67-bdee-bf8242cda34b" />
+  <img src="https://github.com/user-attachments/assets/a0ba3663-3886-4b67-bdee-bf8242cda34b" width="80%" alt="Pneumatic Step Diagram" />
 </p>
 
 ### **FluidSim Electro-Pneumatic Circuit Diagram**
 <p align="center">
-  <img width="700" height="450" style="object-fit: contain;" alt="FluidSim Circuit Diagram" src="https://github.com/user-attachments/assets/3dbb739a-d578-471a-8d9f-bf716790d95c" />
+  <img src="https://github.com/user-attachments/assets/3dbb739a-d578-471a-8d9f-bf716790d95c" width="80%" alt="FluidSim Circuit Diagram" />
 </p>
 
 ---
