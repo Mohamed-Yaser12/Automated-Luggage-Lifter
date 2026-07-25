@@ -2,7 +2,7 @@
 
 
 ## 📌 Project Overview
-The **Luggage Lifter** is a pneumatic-powered automated system designed to transfer luggage from a lower receiving platform to an upper storage level in a continuous sequence[cite: 1]. Built with a stable frame structure and driven by three pneumatic cylinders, the system is designed to reduce manual handling effort in transport operations such as airports or storage facilities[cite: 1].
+The **Luggage Lifter** is a pneumatic-powered automated system designed to transfer luggage from a lower receiving platform to an upper storage level in a continuous sequence. Built with a stable frame structure and driven by three pneumatic cylinders, the system is designed to reduce manual handling effort in transport operations such as airports or storage facilities.
 
 <img width="1280" height="720" alt="1" src="https://github.com/user-attachments/assets/905c7ab8-af36-46bc-b958-a2146ed53236" />
 <img width="1280" height="960" alt="4" src="https://github.com/user-attachments/assets/ad07b445-d710-4884-be86-66fbe8349681" />
@@ -15,16 +15,16 @@ The **Luggage Lifter** is a pneumatic-powered automated system designed to trans
 ## ⚙️ System Architecture & Working Principle
 
 ### **Mechanism Description**
-1. **Frame Structure:** Ground-mounted frame supporting all mechanical and pneumatic components[cite: 1].
-2. **Receiving Platform (Level 2):** Initial placement zone for luggage[cite: 1].
-3. **Cylinder 1 (Horizontal Transfer):** Pushes luggage from the receiving platform onto the lifting platform[cite: 1].
-4. **Cylinder 2 (Vertical Lift):** Elevates the platform from Level 2 to Level 3[cite: 1].
-5. **Cylinder 3 (Horizontal Push):** Pushes luggage from the elevated platform onto a slider, where it returns via gravity/pass-through to complete the cycle[cite: 1].
+1. **Frame Structure:** Ground-mounted frame supporting all mechanical and pneumatic components.
+2. **Receiving Platform (Level 2):** Initial placement zone for luggage.
+3. **Cylinder 1 (Horizontal Transfer):** Pushes luggage from the receiving platform onto the lifting platform.
+4. **Cylinder 2 (Vertical Lift):** Elevates the platform from Level 2 to Level 3.
+5. **Cylinder 3 (Horizontal Push):** Pushes luggage from the elevated platform onto a slider, where it returns via gravity/pass-through to complete the cycle.
 
 ### **Pneumatic Actuators Summary**
-* **Cylinder A / Cylinder 1:** MAL20×125 (Horizontal Transfer)[cite: 1]
-* **Cylinder B / Cylinder 2:** MAL20×100 (Vertical Lifting)[cite: 1]
-* **Cylinder C / Cylinder 3:** MAL20×125 (Horizontal Exit Push)[cite: 1]
+* **Cylinder A / Cylinder 1:** MAL20×125 (Horizontal Transfer)
+* **Cylinder B / Cylinder 2:** MAL20×100 (Vertical Lifting)
+* **Cylinder C / Cylinder 3:** MAL20×125 (Horizontal Exit Push)
 
 ---
 
@@ -48,10 +48,10 @@ $$A+ \rightarrow (A- \text{ and } B+) \rightarrow \text{Delay} \rightarrow C+ \r
 
 #### **Sequence Step-by-Step Explanation:**
 * **Step 1 ($A+$):** When the `START` push button is engaged and proximity sensor `S1` detects luggage on Level 2, **Cylinder A** extends to transfer the item onto the vertical lifting platform.
-* **Step 2 ($A-$ & $B+$):** Reaching reed switch `R1` triggers **Cylinder A** to retract while simultaneously activating **Cylinder B** to lift the platform vertically from Level 2 to Level 3[cite: 1].
+* **Step 2 ($A-$ & $B+$):** Reaching reed switch `R1` triggers **Cylinder A** to retract while simultaneously activating **Cylinder B** to lift the platform vertically from Level 2 to Level 3.
 * **Step 3 ($\text{Delay}$):** Once **Cylinder B** reaches the upper level (hitting reed switch `R2`), a timer introduces a short delay to stabilize the platform before moving to the next phase.
-* **Step 4 ($C+$):** **Cylinder C** extends horizontally to push the luggage off the elevated platform and onto the slider mechanism[cite: 1].
-* **Step 5 ($C-$ & $B-$):** Reaching reed switch `R3` signals **Cylinder C** to retract and **Cylinder B** to descend back to Level 2, completing the cycle and resetting the system for the next load[cite: 1].
+* **Step 4 ($C+$):** **Cylinder C** extends horizontally to push the luggage off the elevated platform and onto the slider mechanism.
+* **Step 5 ($C-$ & $B-$):** Reaching reed switch `R3` signals **Cylinder C** to retract and **Cylinder B** to descend back to Level 2, completing the cycle and resetting the system for the next load.
 
 ---
 
@@ -61,8 +61,8 @@ $$A+ \rightarrow (A- \text{ and } B+) \rightarrow \text{Delay} \rightarrow C+ \r
 </p>
 
 #### **Step Diagram Overview:**
-* **Position vs. Time Graph:** The step-displacement diagram visually displays the state (Extended vs. Retracted) of Cylinders A, B, and C across each phase of operation[cite: 1].
-* **Interlock Control:** It illustrates how feedback elements (proximity sensor `S1` and reed switches `R1`, `R2`, `R3`) trigger sequential transitions, preventing mechanical clashes during movement[cite: 1].
+* **Position vs. Time Graph:** The step-displacement diagram visually displays the state (Extended vs. Retracted) of Cylinders A, B, and C across each phase of operation.
+* **Interlock Control:** It illustrates how feedback elements (proximity sensor `S1` and reed switches `R1`, `R2`, `R3`) trigger sequential transitions, preventing mechanical clashes during movement.
 
 ---
 
@@ -72,9 +72,9 @@ $$A+ \rightarrow (A- \text{ and } B+) \rightarrow \text{Delay} \rightarrow C+ \r
 </p>
 
 #### **Circuit Architecture Details:**
-* **Pneumatic Power Section:** Features three double-acting pneumatic cylinders controlled by $5/2$-way double solenoid directional control valves (`SOL-1`, `SOL-2`, `SOL-3`) connected to a regulated pressure supply[cite: 1].
-* **Electrical Control Section:** Uses classic relay logic powered by a $24\text{V DC}$ supply. Relay contacts (`K0`, `C1`, `C2`, `C3`) act as latching circuits to store memory states during step transitions[cite: 1].
-* **Safety Integration:** Includes a master control relay (`K0`) wired to latching `START` / `STOP` buttons for emergency halt capability[cite: 1].
+* **Pneumatic Power Section:** Features three double-acting pneumatic cylinders controlled by $5/2$-way double solenoid directional control valves (`SOL-1`, `SOL-2`, `SOL-3`) connected to a regulated pressure supply.
+* **Electrical Control Section:** Uses classic relay logic powered by a $24\text{V DC}$ supply. Relay contacts (`K0`, `C1`, `C2`, `C3`) act as latching circuits to store memory states during step transitions.
+* **Safety Integration:** Includes a master control relay (`K0`) wired to latching `START` / `STOP` buttons for emergency halt capability.
 
 ---
 
